@@ -63,13 +63,13 @@ gnb:
     protocol: UDP
 
   n2if:  # NGAP
-    ipAddress: 10.100.50.250
+    ipAddress: 192.168.3.140
   n3if:  # GTP-U
-    ipAddress: 10.100.50.236
+    ipAddress: 192.168.1.10
 
   amf:
     n2if:  # NGAP
-      ipAddress: 10.100.50.249
+      ipAddress: 192.168.3.210
       port: 38412
     service:
       ngap:
@@ -125,6 +125,7 @@ ue:
   securityContext:
     capabilities:
             add: ["NET_ADMIN"]
+    privileged: true
   resources:
     requests:
       cpu: 100m
