@@ -1,7 +1,7 @@
 # N4 Config
 config: {
     "cniVersion": "0.3.1",
-    "type": "device",
+    "type": "host-device",
     "device": "eno12429",
     "ipam": {
       "type": "static" 
@@ -11,7 +11,7 @@ config: {
 # N3 Config
 config: {
     "cniVersion": "0.3.1",
-    "type": "device",
+    "type": "host-device",
     "device": "enp202s0f0",
     "ipam": {
       "type": "static" 
